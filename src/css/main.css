@@ -45,6 +45,8 @@ body {
 	height: 100vh;
 	/* overflow: hidden; */
 	/* line-height: 1.5rem; */
+
+	background-color: #0d1117;
 }
 
 button:hover,
@@ -58,7 +60,6 @@ a:hover {
 
 #main-content {
 	z-index: 15;
-	border: 2px solid red;
 
 	display: flex;
 	flex-direction: column;
