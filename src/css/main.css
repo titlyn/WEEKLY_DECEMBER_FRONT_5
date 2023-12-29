@@ -10,14 +10,14 @@
 	src: url("/assets/fonts/Mona-Sans.ttf");
 }
 
-:root {
-	color: white;
+::-webkit-scrollbar{
+	display: none;
 }
-
 
 *,
 *::before,
 *::after {
+	/* color: white; */
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -48,9 +48,18 @@ body {
 	background-color: #0d1117;
 }
 
+button{
+	background-color: transparent;
+	border: none;
+}
+
 button:hover,
 a:hover {
 	cursor: pointer;
+}
+
+ul{
+	list-style: none;
 }
 
 #loader{
@@ -74,7 +83,7 @@ a:hover {
 }
 
 
-#main-content>*:not(header) {
+#main-content>* {
 	z-index: 10;
 }
 

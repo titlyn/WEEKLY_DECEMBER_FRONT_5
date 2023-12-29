@@ -13,9 +13,11 @@
 	<div id="loader"></div>
 	<div id="main-content">
 		<header class="py-3 p-responsive">
-			<button class="header-signin">
-				Sign in
-			</button>
+			<div class="flex-container">
+				<button class="header-signin">
+					Sign in
+				</button>
+			</div>
 
 			<a href="/" id="header-logo">
 				<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
@@ -23,17 +25,19 @@
 				</svg>
 			</a>
 
-			<button id="nav-toggler">
-				<span class="bar1"></span>
-				<span class="bar2"></span>
-				<span class="bar3"></span>
-			</button>
+			<div class="flex-container">
+				<button id="nav-toggler">
+					<span class="bar1"></span>
+					<span class="bar2"></span>
+					<span class="bar3"></span>
+				</button>
+			</div>
 
 			<nav>
-				<div class="background">
+				<div class="container">
 					<ul id="left-links">
 						<li>
-							<button name="product">
+							<button name="Product">
 								Product
 								<svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
 									<path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -139,12 +143,12 @@
 									<ul>
 										<li>
 											<a href="https://github.com/features">
-												<span>All features</span>
+												<span class="descri">All features</span>
 											</a>
 										</li>
 										<li>
 											<a href="https://docs.github.com/" target="_blank">
-												<span>Documentation</span>
+												<span class="descri">Documentation</span>
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
 												</svg>
@@ -152,7 +156,7 @@
 										</li>
 										<li>
 											<a href="https://skills.github.com/" target="_blank">
-												<span>Github Skills</span>
+												<span class="descri">Github Skills</span>
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
 												</svg>
@@ -160,7 +164,7 @@
 										</li>
 										<li>
 											<a href="https://github.blog/" target="_blank">
-												<span>Blog</span>
+												<span class="descri">Blog</span>
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
 												</svg>
@@ -171,7 +175,7 @@
 							</div>					
 						</li>
 						<li>
-							<button name="product">
+							<button name="Solutions">
 								Solutions
 								<svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
 									<path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -183,16 +187,16 @@
 	
 									<ul>
 										<li>
-											<a href="https://github.com/enterprise">Enterprise</a>
+											<a href="https://github.com/enterprise" class="descri">Enterprise</a>
 										</li>
 										<li>
-											<a href="https://github.com/team">Teams</a>
+											<a href="https://github.com/team" class="descri">Teams</a>
 										</li>
 										<li>
-											<a href="https://github.com/enterprise/startups">Startups</a>
+											<a href="https://github.com/enterprise/startups" class="descri">Startups</a>
 										</li>
 										<li>
-											<a href="https://education.github.com/" target="_blank">
+											<a href="https://education.github.com/" target="_blank" class="descri">
 												Educations
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -206,10 +210,10 @@
 	
 									<ul>
 										<li>
-											<a href="https://github.com/solutions/ci-cd/">CI/CD & Automation</a>
+											<a href="https://github.com/solutions/ci-cd/" class="descri">CI/CD & Automation</a>
 										</li>
 										<li>
-											<a href="https://resources.github.com/devops/" target="_blank">
+											<a href="https://resources.github.com/devops/" target="_blank" class="descri">
 												DevOps
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -217,7 +221,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="https://resources.github.com/devops/fundamentals/devsecops/" target="_blank">
+											<a href="https://resources.github.com/devops/fundamentals/devsecops/" target="_blank" class="descri">
 												DevSecOps
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -231,7 +235,7 @@
 	
 									<ul>
 										<li>
-											<a href="https://resources.github.com/learn/pathways/" target="_blank">
+											<a href="https://resources.github.com/learn/pathways/" target="_blank" class="descri">
 												Learning Pathways
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -239,7 +243,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="https://resources.github.com/" target="_blank">
+											<a href="https://resources.github.com/" target="_blank" class="descri">
 												White papers, Ebooks, Webinars
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -247,10 +251,10 @@
 											</a>
 										</li>
 										<li>
-											<a href="https://github.com/customer-stories">Customer stories</a>
+											<a href="https://github.com/customer-stories" class="descri">Customer stories</a>
 										</li>
 										<li>
-											<a href="https://partner.github.com/" target="_blank">
+											<a href="https://partner.github.com/" target="_blank" class="descri">
 												Partners
 												<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle">
 													<path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path>
@@ -262,7 +266,7 @@
 							</div>					
 						</li>
 						<li>
-							<button name="product">
+							<button name="Open source">
 								Open Source
 								<svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
 									<path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
@@ -273,8 +277,10 @@
 									<ul>
 										<li>
 											<a href="https://github.com/sponsors">
-												<span class="title">Github Sponsors</span>
-												<span class="descri">Fund open source developers</span>
+												<span>
+													<span class="title">Github Sponsors</span>
+													<span class="descri">Fund open source developers</span>
+												</span>
 											</a>
 										</li>
 									</ul>
@@ -283,8 +289,10 @@
 									<ul>
 										<li>
 											<a href="https://github.com/readme">
-												<span class="title">The ReadME Project</span>
-												<span class="descri">Github community articles</span>
+												<span>
+													<span class="title">The ReadME Project</span>
+													<span class="descri">Github community articles</span>
+												</span>
 											</a>
 										</li>
 									</ul>
@@ -293,13 +301,13 @@
 									<p class="title">Repositories</p>
 									<ul>
 										<li>
-											<a href="https://github.com/sponsors">Topics</a>
+											<a href="https://github.com/sponsors" class="descri">Topics</a>
 										</li>
 										<li>
-											<a href="https://github.com/trending">Trending</a>
+											<a href="https://github.com/trending" class="descri">Trending</a>
 										</li>
 										<li>
-											<a href="https://github.com/collections">Collections</a>
+											<a href="https://github.com/collections" class="descri">Collections</a>
 										</li>
 									</ul>
 								</div>
@@ -316,14 +324,14 @@
 								<path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path>
 							</svg>
 							<span>Search or jump to...</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 						</button>
-						<button class="header-signin">
+						<a class="header-signin">
 							Sign in
-						</button>
-						<button class="header-signup">
+						</a>
+						<a class="header-signup">
 							Sign up
-						</button>
+						</a>
 					</div>
 				</div>
 			</nav>
