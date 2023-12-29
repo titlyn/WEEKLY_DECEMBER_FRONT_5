@@ -1,0 +1,103 @@
+@import '/src/styles/components/part1.css';
+@import '/src/styles/components/part2.css';
+
+:root {
+	--white: #FFF;
+	--black: #000;
+	--grey: #4D4D4D;
+	--blue: #81ADC8;
+	--champagne: #F7EDE8;
+	--vermillon: #CD4631;
+	--vermillon-o: #cd4631b4;
+
+	--vert-padding: 16px;
+	--vert-padding: 16px;
+	color: var(--black);
+}
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+.mona{
+	font-family: "Mona Sans","Mona Sans Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+a {
+	/* display: inline-flex; */
+	width: max-content;
+	height: max-content;
+	text-decoration: none;
+	color: inherit;
+}
+
+html,
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	/* overflow: hidden; */
+	/* line-height: 1.5rem; */
+}
+
+button:hover,
+a:hover {
+	cursor: pointer;
+}
+
+#loader{
+	display: none;
+}
+
+#main-content {
+	z-index: 15;
+	border: 2px solid red;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	scroll-behavior: smooth;
+
+	position: relative;
+}
+
+#main-content>*:not(header) {
+	z-index: 10;
+}
+
+@media only screen and (max-width: 1600px) {
+}
+
+@media only screen and (max-width: 1500px) {
+}
+
+@media only screen and (max-width: 1012px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 680px) {
+}
+
+@media only screen and (max-width: 450px) {
+}
+
+@keyframes takeoff {
+    0%{ bottom: 0; }
+    100%{
+        bottom: 100%;
+    }
+}
