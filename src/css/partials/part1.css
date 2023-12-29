@@ -1,0 +1,83 @@
+.container-image {
+    position: relative;
+}
+
+.head-image .container-image img{
+    position: absolute;
+    right: -80vh;
+    height: 100vh;
+    top: -15vh;
+}
+
+#content {
+    display: flex;
+}
+
+.line-left {
+    width: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.line-left .gray-circle {
+    height: .8rem;
+    width: .8rem;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-left .gray-circle .dark-circle {
+    background-color: #0d1117;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 20px;
+}
+
+.glow-line {
+    background-color: red;
+    height: 30vh;
+    width: .2rem;
+    left: 10rem;
+    top: 0;
+    left: 0;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.form .separator {
+    width: 10px;
+    background-color: red;
+}
+
+.form .input input {
+    height: 2.5rem;
+    width: 18rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding:0 0 0 1rem ;
+}
+
+.form .input button {
+    height: 2.5rem;
+    padding: 0 .5rem;
+    border-radius: 0 5px 5px 0;
+    border: none;
+}
+
+.circle-span {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    height: 20px;
+    width:20px;
+    background-color: red;
+    filter: blur(18px);
+}
