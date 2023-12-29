@@ -15,26 +15,26 @@ export function setUpDropdowns(){
         el.addEventListener('click', (e)=>e.stopPropagation())
     })
     
-    DROPDOWN_TOGGLERS.forEach( toggler => {
-        const btn = toggler.querySelector('button')
-        let isVisible = false
+    // DROPDOWN_TOGGLERS.forEach( toggler => {
+    //     const btn = toggler.querySelector('button')
+    //     let isVisible = false
         
-        function addVisible(){
-            if(!isVisible){
-                toggler.classList.add('visible')
-                isVisible= true
-            }
-        }
+    //     function addVisible(){
+    //         if(!isVisible){
+    //             toggler.classList.add('visible')
+    //             isVisible= true
+    //         }
+    //     }
         
-        function removeVisible(){
-            if(isVisible){
-                toggler.classList.remove('visible')
-                isVisible = false
-            }
-        }
+    //     function removeVisible(){
+    //         if(isVisible){
+    //             toggler.classList.remove('visible')
+    //             isVisible = false
+    //         }
+    //     }
 
-        toggler.addEventListener('mouseover', addVisible)
-        toggler.addEventListener('mouseleave', removeVisible)
+    //     toggler.addEventListener('mouseover', addVisible)
+    //     toggler.addEventListener('mouseleave', removeVisible)
 
-    })
+    // })
 }

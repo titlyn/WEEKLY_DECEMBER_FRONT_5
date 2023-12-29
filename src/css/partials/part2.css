@@ -1,3 +1,12 @@
+header .flex-container > .header-signin, header .flex-container > .header-signup{
+	font-weight: 400;
+	width: max-content;
+	border: 1px solid white;
+
+	padding: 4px 8px;
+	font-size: 14px;
+}
+
 #nav-toggler {
 	display: inline-block;
 	cursor: pointer;
@@ -11,7 +20,7 @@
 	width: 22px;
 	height: 2px;
 
-	background-color: #333;
+	background-color: white;
 	margin: 4px 0;
 
 	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
@@ -63,6 +72,13 @@ header > *:not(nav) {
 
 .flex-container:nth-of-type(2) {
 	text-align: end;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav:not(.visible){
+	display: none;
 }
 
 nav {
@@ -227,11 +243,11 @@ nav .container > * {
 	transition-property: opacity, transform;
 }
 
-#left-links li.visible > button {
+#left-links li:hover > button {
 	color: #6e7781;
 }
 
-#left-links li.visible > button svg {
+#left-links li:hover > button svg {
 	transform: rotateZ(0deg);
 	-webkit-transform: rotateZ(0deg);
 	-moz-transform: rotateZ(0deg);
@@ -239,7 +255,7 @@ nav .container > * {
 	-o-transform: rotateZ(0deg);
 }
 
-#left-links li.visible .dropdown {
+#left-links li:hover .dropdown {
 	display: flex;
 	flex-direction: column;
 }
@@ -303,6 +319,10 @@ nav .container > * {
 @media (min-width: 544px) {
 	nav {
 		padding-bottom: 16px;
+	}
+
+	nav .container{
+		width: 320px;
 	}
 }
 
