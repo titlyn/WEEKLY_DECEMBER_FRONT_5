@@ -1,5 +1,14 @@
 @import './partials/part1.css';
 @import './partials/part2.css';
+@font-face {
+	font-family: 'Hubot';
+	src: url("/assets/fonts/Hubot-Sans.ttf");
+}
+
+@font-face {
+	font-family: 'Mona';
+	src: url("/assets/fonts/Mona-Sans.ttf");
+}
 
 :root {
 	color: white;
