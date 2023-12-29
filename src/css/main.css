@@ -73,6 +73,11 @@ a:hover {
 	position: relative;
 }
 
+.px-3{
+	padding-right: 16px;
+    padding-left: 16px;
+}
+
 #main-content>*:not(header) {
 	z-index: 10;
 }
