@@ -347,6 +347,161 @@ nav .container > * {
 	display: none;
 }
 
+.track-content, .track-detail, .track-text, .track-text a, .track-stat{
+	display: flex;
+}
+
+.track-content{
+	width: 100%;
+	padding: 32px 16px 0px 16px;
+
+	gap: 8px;
+}
+
+.track-detail > *:nth-last-child(1){
+	padding-bottom: 72px;
+}
+
+.track-detail{
+	flex-direction: column;
+	gap: 32px;
+
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.track-text{
+	flex-direction: column;
+	justify-content: flex-end;
+
+	max-width: 515px;
+
+	gap: 16px;
+	color: #979a9c;
+}
+
+.white, .track-text a{
+	color: white;
+	fill: white;
+}
+
+.track-text a{
+	align-items: center;
+
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	gap: 3px;
+}
+
+.track-text a .octicon-chevrow-stem{
+	stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    transition: stroke-dashoffset .2s;
+}
+
+.track-text a .chevron{
+	transition: transform .2s;
+	transform: translateX(-4px);
+
+	-webkit-transform: translateX(-4px);
+	-moz-transform: translateX(-4px);
+	-ms-transform: translateX(-4px);
+	-o-transform: translateX(-4px);
+	-webkit-transition: transform .2s;
+	-moz-transition: transform .2s;
+	-ms-transition: transform .2s;
+	-o-transition: transform .2s;
+}
+
+.track-text a:hover .octicon-chevrow-stem{
+	stroke-dasharray: unset;
+    stroke-dashoffset: unset;
+}
+
+.track-text a:hover .chevron{
+	transform: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+}
+
+.track-stat{
+	flex-direction: column;
+	gap: 16px;
+
+	padding: 16px 0;
+	color: white;
+}
+
+.track-stat .bordered{
+	border-width: 1px;
+	border-style: solid;
+	width: max-content;
+	padding: 0 8px;
+	font-size: 12px;
+	line-height: 20px;
+
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.pink{
+	color: rgb(247, 120, 186);
+	border-color: rgb(247, 120, 186);
+}
+
+.track-stat h3{
+	font-size: 40px;
+	line-height: auto;
+	margin-top: 8px;
+}
+
+.track-content .relative-container{
+	position: relative;
+	width: 100%;
+	aspect-ratio: 1/.4;
+}
+
+.track-content .relative-container img{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	width: calc(100% - 24px);
+	height: auto;
+	max-width: 595px;
+
+	object-fit: cover;
+}
+
+.line-left .line{
+	display: flex;
+	width: 2px;
+	height: 100%;
+
+	transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+	/* transform: scaleY(0); */
+	transform-origin: 0 0;
+	-webkit-transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+	-moz-transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+	-ms-transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+	-o-transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.line-left .pink-line{
+	background: linear-gradient(transparent, #F778BA, #F778BA, transparent);
+}
+
+.line-left .branch{
+	display: none;
+}
+
 @media (min-width: 544px) {
 	nav {
 		padding-bottom: 16px;
@@ -354,6 +509,38 @@ nav .container > * {
 
 	nav .container {
 		width: 320px;
+	}
+}
+
+@media (min-width: 768px){
+	.track-detail{
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		gap: 48px;
+	}
+
+	.track-content .relative-container, .track-text{
+		width: calc((100% - 48px) / 2);
+	}
+
+	.track-text{
+		order: 1;
+		max-width: 525px;
+	}
+
+	.relative-container{
+		order: 2;
+	}
+
+	.track-stat{
+		width: 100%;
+		order: 3;
+	}
+
+	.track-content .relative-container img{
+		width: 100%;
+		right: -24px;
 	}
 }
 
