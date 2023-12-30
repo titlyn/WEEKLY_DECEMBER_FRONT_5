@@ -1,16 +1,21 @@
 header {
 	display: flex;
 	align-items: center;
+	z-index: 11 !important
 }
 
 header .flex-container > .header-signin,
-header .flex-container > .header-signup {
+.header-signup {
 	font-weight: 400;
 	width: max-content;
 	border: 1px solid white;
 
-	padding: 4px 8px;
+	padding: 4px 7px;
 	font-size: 14px;
+
+	transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+	transition-duration: 250ms;
+	transition-property: color, border-color;
 }
 
 #nav-toggler {
@@ -103,6 +108,10 @@ nav {
 	padding-right: 0;
 
 	color: #0d1117;
+}
+
+nav.visible{
+	backdrop-filter: blur(5px);
 }
 
 nav .container {
@@ -247,6 +256,11 @@ nav .container > * {
 	flex-direction: column;
 }
 
+#left-links li:hover > button, #left-links > li:hover > a, .header-signin:hover, .header-signup:hover {
+	color: #979a9c;
+	border-color: #979a9c !important;
+}
+
 #left-links li > button svg {
 	transform: rotateZ(-90deg);
 	-webkit-transform: rotateZ(-90deg);
@@ -345,7 +359,7 @@ nav .container > * {
 
 @media (min-width: 1012px) {
 	header {
-		gap: 16px;
+		gap: 18px;
 		padding-left: 16px !important;
 		padding-right: 16px !important;
 	}
@@ -355,6 +369,9 @@ nav .container > * {
 		width: max-content;
 		display: flex;
 
+		font-weight: 400;
+
+		background-color: transparent;
 		text-wrap: nowrap;
 	}
 
@@ -369,6 +386,7 @@ nav .container > * {
 	}
 
 	nav:not(.visible),
+	nav.visible,
 	nav .container {
 		display: flex;
 		flex-direction: row;
@@ -382,6 +400,7 @@ nav .container > * {
 		position: static;
 
 		background-color: transparent;
+		backdrop-filter: none;
 	}
 
 	#right-links,
@@ -436,7 +455,6 @@ nav .container > * {
 	.dropdown {
 		background-color: white;
 		color: #1f2328;
-
 		width: max-content;
 		padding: 24px;
 
@@ -445,7 +463,22 @@ nav .container > * {
 		-moz-border-radius: 0.375rem;
 		-ms-border-radius: 0.375rem;
 		-o-border-radius: 0.375rem;
-	}
+
+		transform: scale(0.99) translateY(-0.7em);
+		transform-origin: top;
+		-webkit-transform: scale(0.99) translateY(-0.7em);
+		-moz-transform: scale(0.99) translateY(-0.7em);
+		-ms-transform: scale(0.99) translateY(-0.7em);
+		-o-transform: scale(0.99) translateY(-0.7em);
+}
+
+	#left-links li:hover > button > svg{
+		transform: translateY(3px);
+		-webkit-transform: translateY(3px);
+		-moz-transform: translateY(3px);
+		-ms-transform: translateY(3px);
+		-o-transform: translateY(3px);
+}
 
 	button[name="Product"] ~ .dropdown {
 		flex-direction: row !important;
@@ -463,5 +496,14 @@ nav .container > * {
 	
 	.dropdown .right{
 		padding: 0 24px;
+	}
+
+	#search-btn{
+		background-color: #283042;
+		border: 1px solid #545A65;
+	}
+
+	#search-btn span {
+		width: 266px;
 	}
 }
