@@ -1,20 +1,36 @@
-#desktop-hero{
+#desktop-hero {
     display: none;
 }
 
-#mobil-hero{
+#mobil-hero {
     width: 100%;
     height: auto;
 }
 
+.pt-0{
+    padding-top: 0 !important;
+}
+
+.pb-6{
+    padding-bottom: 96px !important;
+}
+
+.mt-6{
+    margin-top: 96px !important;
+}
+
 .line-left {
     display: flex;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     flex-direction: column;
     align-items: center;
     width: 10%;
 
     position: relative;
+}
+
+.light-blue{
+    color: #33B3AE;
 }
 
 .gray-circle {
@@ -27,19 +43,31 @@
     -o-border-radius: 50%;
 }
 
-.semi-purple-line{
-    background: linear-gradient(transparent, #7C72FF 30%);
+.semi-purple-line {
+    background: linear-gradient(transparent, #7c72ff 30%);
 }
 
-.purple-green-line{
-    background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
+.purple-green-line {
+    background: linear-gradient(#7c72ff, #2da44e 80%, #3fb950);
+}
+
+.green-line {
+    background: linear-gradient(#2da44e 50%, transparent);
+}
+
+.blue-line {
+    background: linear-gradient(transparent, #33B3AE 40%);
+}
+
+.blue-line.reverse {
+    background: linear-gradient(rgb(51, 179, 174) 40%, transparent);
 }
 
 .form .input button {
     box-sizing: border-box;
     border: none;
     border-radius: 0 5px 5px 0;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     font-size: 17px;
     background-color: rgb(122, 42, 212);
     color: white;
@@ -49,10 +77,10 @@
     font-weight: bold;
 }
 
-.secondary{
+.secondary {
     height: 2.8rem;
     padding: 0 1rem;
-    outline: 1px solid #7C72FF;
+    outline: 1px solid #7c72ff;
     border-radius: 5px;
     background-color: transparent;
     color: white;
@@ -60,39 +88,42 @@
     font-weight: bold;
 }
 
-#landing{
+#landing {
     margin-top: -68px;
     position: relative;
 }
 
-#landing .track-content{
+#landing .track-content {
     color: #979a9c !important;
 }
 
-#landing .track-content h2{
+#landing .track-content h2 {
     font-size: 48px;
     line-height: 52px;
 }
 
-.text-build-title, .trust-list, .logos{
+.text-build-title,
+.trust-list,
+.logos,
+#productivity p {
     display: flex;
     flex-direction: column;
 }
 
-.text-build-title{
+.text-build-title {
     gap: 8px;
 }
 
-.trust-list{
+.trust-list {
     width: 100%;
     gap: 16px;
 }
 
-.trust-list p{
+.trust-list p {
     font-size: 16px;
 }
 
-.logos{
+.logos {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -101,17 +132,56 @@
     gap: 16px;
 }
 
-.logos img{
+.logos img {
     height: 44px;
-    width: calc((100 - 16px)/2);
+    width: calc((100 - 16px) / 2);
+}
+
+.track-content.aligned .track-detail {
+    padding-top: 18px;
+}
+
+.track-detail .title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.track-detail .p {
+    position: relative;
+}
+
+.track-detail .p h2 {
+    color: #3fb950;
+}
+
+.track-detail .p p {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.circles {
+    display: none;
+}
+
+.track-content .full-img{
+    width: 100%;
+    height: auto;
+}
+
+.sponsor-cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (min-width: 544px) {
-    #mobil-hero{
+    #mobil-hero {
         display: none;
     }
 
-    #desktop-hero{
+    #desktop-hero {
         display: flex;
         position: absolute;
         left: 67%;
@@ -121,44 +191,83 @@
         width: min(1118px, max(100vh, 100vw));
     }
 
-    #landing .track-content{
+    #landing .track-content {
         padding-top: 148px;
+    }
+
+    .circles {
+        display: block;
+        width: 50%;
+        height: auto;
+        z-index: -1;
+        position: absolute;
+        top: 0px;
+        right: -25%;
+        transition-delay: 400ms;
+        animation: rotate 180s linear infinite;
+        -webkit-animation: rotate 180s linear infinite;
     }
 }
 
 @media (min-width: 768px) {
-    #landing .track-content h2{
+    #landing .track-content h2 {
         font-size: 86.4px;
         line-height: 76px;
 
         max-width: 450px;
     }
 
-    .trust-list p{
+    .trust-list p {
         font-size: 20px;
         line-height: 28px;
     }
 
-    #landing .track-content .track-detail{
+    #landing .track-content .track-detail {
         gap: 96px !important;
     }
 
-    .logos{
+    .logos {
         column-gap: 0;
         row-gap: 16px;
     }
 }
 
 @media (min-width: 1012px) {
-    #landing .track-content h2{
+    #landing .track-content h2 {
         font-size: 96px;
         line-height: 80px;
 
         max-width: unset;
     }
 
-    .trust-list p{
+    .trust-list p {
         font-size: 20px;
         line-height: 28px;
+    }
+
+    .track-detail .p h2 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .track-detail .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .track-detail .p p {
+        font-size: 48px;
+        line-height: 52px;
+        width: 80%;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
     }
 }

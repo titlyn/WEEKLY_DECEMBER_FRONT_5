@@ -366,6 +366,8 @@ nav .container > * {
 	flex-direction: column;
 	gap: 32px;
 
+	width: 100%;
+
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 28px;
@@ -455,6 +457,11 @@ button.secondary:hover .chevron,
 	-o-border-radius: 8px;
 }
 
+.green{
+	color: #3fb950;
+	border-color: #3fb950;
+}
+
 .pink{
 	color: rgb(247, 120, 186);
 	border-color: rgb(247, 120, 186);
@@ -479,7 +486,8 @@ button.secondary:hover .chevron,
 
 	width: calc(100% - 24px);
 	height: auto;
-	max-width: 595px;
+	max-width: 365px;
+	max-height: 400px;
 
 	object-fit: cover;
 }
@@ -551,13 +559,13 @@ button.secondary:hover .chevron,
 	top: 5px;
 }
 
-.tilt-card #sponsor-cards {
+.tilt-card .sponsor-cards {
 	width: 100%;
 	max-height: 480px;
 	overflow: hidden;
 }
 
-.tilt-card #sponsor-cards > div {
+.tilt-card .sponsor-cards > div {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -723,6 +731,14 @@ button.secondary:hover .chevron,
 
 .glow-icon.blue::before{
 	background: radial-gradient(#745bc7, transparent 70%);
+}
+
+.glow-icon.green::before{
+	background: radial-gradient(#2DA44E, transparent 70%);
+}
+
+.glow-icon.blue::before{
+	background: radial-gradient(#33B3AE, transparent 70%);
 }
 
 .video-container {
@@ -966,7 +982,7 @@ footer .subscribe{
 		width: 320px;
 	}
 
-	.tilt-card #sponsor-cards > div {
+	.tilt-card .sponsor-cards > div {
 		gap: 16px;
 		right: -24px;
 	}
@@ -976,7 +992,7 @@ footer .subscribe{
 		padding: 24px;
 	}
 
-	.track-content#presentation {
+	.track-content.presentation {
 		flex-direction: row;
 		flex-wrap: wrap;
 
@@ -1027,6 +1043,10 @@ footer .subscribe{
 		gap: 48px;
 	}
 
+	.track-content.special {
+		gap: 45px
+	}
+
 	.track-content .relative-container, .track-text{
 		width: calc((100% - 48px) / 2);
 	}
@@ -1050,7 +1070,11 @@ footer .subscribe{
 		right: -24px;
 	}
 
-	.track-content .relative-container::before {
+	.track-content .relative-container img{
+		max-height: unset;
+	}
+
+/* 	.track-content .relative-container::before {
 		z-index: -1;
 
 		content: "";
@@ -1070,7 +1094,7 @@ footer .subscribe{
 		-moz-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
-	}
+	} */
 
 	.line-left .branch {
 		display: flex;
@@ -1091,26 +1115,26 @@ footer .subscribe{
 		max-width: 225px;
 	}
 
-	#presentation .tilt-card {
+	.presentation .tilt-card {
 		width: calc((100% - 32px) / 2);
 	}
 
-	#presentation .tilt-card.large {
+	.presentation .tilt-card.large {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
 	}
 
-	#presentation .tilt-card.large .track-text {
+	.presentation .tilt-card.large .track-text {
 		order: 1;
 	}
 
-	#presentation #sponsor-cards {
+	.presentation .sponsor-cards {
 		order: 2;
 		width: 80%;
 	}
 
-	#presentation #sponsor-cards > div {
+	.presentation .sponsor-cards > div {
 		width: 525px;
 		top: -356px;
 
@@ -1121,7 +1145,7 @@ footer .subscribe{
 		-o-transform: scale(0.8) rotate(-15deg) translateZ(10px);
 	}
 
-	#presentation .tilt-card.large .track-text {
+	.presentation .tilt-card.large .track-text {
 		height: 100%;
 		justify-content: space-between;
 	}
@@ -1356,11 +1380,11 @@ footer .subscribe{
 		width: calc(calc(100% - 36px) / 3);
 	}
 
-	#presentation #sponsor-cards {
+	.presentation .sponsor-cards {
 		width: 115%;
 	}
 
-	#presentation #sponsor-cards > div {
+	.presentation .sponsor-cards > div {
 		width: 680px;
 		top: -193px;
 		transform: rotate(-15deg) translateZ(10px);
