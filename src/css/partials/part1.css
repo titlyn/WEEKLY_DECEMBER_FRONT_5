@@ -33,7 +33,7 @@
     top: 0;
     width: min(1118px, 100%);
     left: 67%;
-    height: 100%;
+    height: 110%;
     z-index: 1; /* Assure que l'image est en dessous du contenu texte */
 }
 
@@ -45,7 +45,7 @@
 
 #first-element .glow-line {
     background: linear-gradient(transparent, #7C72FF 30%);
-    height: 40vh;
+    height: 18rem;
     width: 3px;
 }
 
@@ -60,10 +60,15 @@
 #first-element .glow-line-2 {
     background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
     width: 3px;
-    height: 40vh;
+    height: 18rem;
+}
+
+#first-element .text-build-title {
+    line-height: 5rem;
 }
 
 #first-element .text-build-title h2 {
+    margin: 1rem 0 0 0;
     font-size: 5.8rem;
     font-family: 'Mona';
     font-weight: semi-bold;
@@ -90,7 +95,7 @@
 .form .input {
     display: flex;
     height: 2.8rem;
-    width: 80vh;
+    width: 50%;
 }
 
 .form .input input {
@@ -106,11 +111,11 @@
     box-sizing: border-box;
     border: none;
     border-radius: 0 5px 5px 0;
-    padding: 0 1rem;
+    padding: 0 .5rem;
     font-size: 17px;
     background-color: rgb(122, 42, 212);
     color: white;
-    flex: 0.5;
+    flex: 0.8;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -148,13 +153,12 @@
     position: relative;
     z-index: 2; /* Assure que le contenu texte est au-dessus de l'image */
     overflow: visible;
-    margin: auto;
     padding: 0px 16px 0px 16px;
 }
 
 #productivity-content .line-left .glow-line-3 {
     width: 3px;
-    height: 40vh;
+    height: 18rem;
     background: linear-gradient(#2DA44E 50%, transparent)
 }
 
@@ -200,7 +204,7 @@
     justify-content: center;
     align-items: center;
     right: -22%;
-    bottom: -90%;
+    bottom: -95%;
     z-index: -1;
 }
 
@@ -240,6 +244,7 @@
     position: relative;
     z-index: 2;
     width: 100%;
+
 }
 
 .image-code .code-image-container {
@@ -253,55 +258,73 @@
     border-radius: 10px;
 }
 
-#third-element {
+#copilot-content {
     position: relative;
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-#third-element .left-element {
+#copilot-content .left-element {
     width: 50%;
     margin-top: 5rem;
     padding-left: 2.8rem;
     padding-right: 5rem;
+    height: 100%;
 }
 
-#third-element .left-element p {
+#copilot-content .left-element p {
     font-size: 1.5rem;
     color: gray;
 }
 
-#third-element .left-element span{
+#copilot-content .left-element span{
     color: white;
 }
 
-#third-element .left-element a {
-    font-size: 1.5rem;
-    margin: 5rem 0 0 0;
+#copilot-content .left-element .copilot-link {
+    padding: 1.5rem 0 0 0;
 }
 
-#third-element .right-element img{
+#copilot-content .left-element a{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+#copilot-content .right-element img{
     position: absolute;
-    width: 35%;
-    height: 100%;
-    top: -70%;
+	width: calc(35% - 24px);
+	height: auto;
+	max-width: 595px;
+    top: -60%;
     z-index: 10;
     border-radius: 10px;
     right: 7%;
 }
 
-#first-content .third-element {
+#copilot-content {
     display: flex;
     width: 100%;
-    padding: 0 0 0 5rem;
     position: relative;
     z-index: 2; /* Assure que le contenu texte est au-dessus de l'image */
     overflow: visible;
+    padding: 0px 16px 0px 16px;
 }
 
-.third-element .line-left .glow-line-3 {
+#copilot-content .line-left .glow-line-3 {
     width: 3px;
-    height: 80vh;
-    background: linear-gradient(transparent, #2DA44E 50%, transparent)
+    height: 50rem;
+    background: linear-gradient(transparent, #2DA44E 50%, transparent);
+}
+
+@media (min-width: 544px){
+    
+}
+
+@media (min-width: 768px){}
+
+@media (min-width: 1024px){
+    
 }
