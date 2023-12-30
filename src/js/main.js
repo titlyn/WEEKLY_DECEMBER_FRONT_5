@@ -1,3 +1,4 @@
-import { setUpNav } from "./modules/nav.js";
+import { setUpDropdowns, setUpNav } from "./modules/nav.js";
 
 setUpNav()
+setUpDropdowns()
