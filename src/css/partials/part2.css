@@ -650,14 +650,14 @@ button.secondary:hover .chevron,
 	margin: 0;
 }
 
-.bottom-form .form,
-.bottom-form .input {
+.form,
+.form .input {
 	flex-direction: column;
 }
 
-.bottom-form .form,
-.bottom-form .input,
-.bottom-form button {
+.form,
+.form .input,
+.form button {
 	height: max-content;
 
 	display: flex;
@@ -666,8 +666,8 @@ button.secondary:hover .chevron,
 	width: 100%;
 }
 
-.bottom-form input,
-.bottom-form button {
+.form input,
+.form button {
 	align-items: center;
 	justify-content: center;
 	border-radius: 5px !important;
@@ -679,28 +679,29 @@ button.secondary:hover .chevron,
 	-o-border-radius: 5px !important;
 }
 
-.bottom-form button {
+.form button {
 	text-align: center;
 	font-weight: 700;
 }
 
-.bottom-form .form .separator {
+.form .separator {
 	height: 2px;
 	width: 100%;
 	margin: 0;
 	background-color: #30363d9f;
 }
 
-.bottom-form .glow-icon {
+.glow-icon {
 	position: relative;
 }
 
-.bottom-form .glow-icon svg {
+.glow-icon svg {
 	margin: 16px 8px;
 	fill: white;
 }
 
-.bottom-form .glow-icon::before {
+
+.glow-icon::before {
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -708,13 +709,20 @@ button.secondary:hover .chevron,
 	width: 24px;
 	height: 24px;
 	filter: blur(5px);
-	background: radial-gradient(#a371f7, transparent 70%);
 	transform: translate(-50%, -50%) scale(3);
 	-webkit-transform: translate(-50%, -50%) scale(3);
 	-moz-transform: translate(-50%, -50%) scale(3);
 	-ms-transform: translate(-50%, -50%) scale(3);
 	-o-transform: translate(-50%, -50%) scale(3);
 	-webkit-filter: blur(5px);
+}
+
+.glow-icon.purple::before {
+	background: radial-gradient(#a371f7, transparent 70%);
+}
+
+.glow-icon.blue::before{
+	background: radial-gradient(#745bc7, transparent 70%);
 }
 
 .video-container {
@@ -1137,43 +1145,43 @@ footer .subscribe{
 		line-height: 28px;
 	}
 
-	.bottom-form .form,
-	.bottom-form .input {
+	.form,
+	.form .input {
 		flex-direction: row;
 	}
 
-	.bottom-form .input {
+	.form .input {
 		gap: 0;
 		width: 50%;
 	}
 
-	.bottom-form .input > * {
+	.form .input > * {
 		height: 53px;
 	}
 
-	.bottom-form .form .separator {
+	.form .separator {
 		height: 53px;
 		width: 2px;
 	}
 
-	.bottom-form button {
+	.form button {
 		width: max-content;
 		text-wrap: nowrap;
 	}
 
-	.bottom-form .input input {
+	.form .input input {
 		width: 100%;
 		border-top-right-radius: 0 !important;
 		border-bottom-right-radius: 0 !important;
 	}
 
-	.bottom-form .input button {
+	.form .input button {
 		width: 100%;
 		border-top-left-radius: 0 !important;
 		border-bottom-left-radius: 0 !important;
 	}
 
-	.bottom-form .track-text {
+	.form .track-text {
 		gap: 32px;
 	}
 }
