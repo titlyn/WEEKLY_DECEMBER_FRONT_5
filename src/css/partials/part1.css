@@ -1,16 +1,19 @@
+.build-content {
+    width: 100%;
+    padding: 32px 16px 0px 16px;
+    margin: 5% 0 0 0;
+}
 
 
-
-#first-content {
+#first-element {
     position: relative;
     overflow: hidden;
     font-family: 'Mona',sans-serif,Arial, Helvetica, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#first-content .first-element {
+#first-element {
     display: flex;
     width: 100%;
-    padding: 0 0 0 5rem;
     position: relative;
     z-index: 2; /* Assure que le contenu texte est au-dessus de l'image */
     overflow: visible;
@@ -21,10 +24,7 @@
     padding-top: 1rem;
     flex-direction: column;
     align-items: center;
-    width: 16%;
-    height: 100%;
-
-    position: relative;
+    width: 10%;
     /* margin-right: 2.8rem; */
 }
 
@@ -37,39 +37,40 @@
     z-index: 1; /* Assure que l'image est en dessous du contenu texte */
 }
 
-#first-content .gray-circle {
+#first-element .gray-circle {
     padding: 4px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
 }
 
-#first-content .glow-line {
+#first-element .glow-line {
     background: linear-gradient(transparent, #7C72FF 30%);
     height: 40vh;
     width: 3px;
 }
 
-#first-content .glow-icon {
+#first-element .glow-icon {
     padding: 1rem 0;
 }
 
-#first-content .glowed-icon span {
+#first-element .glowed-icon span {
     filter: blur(2px);
 }
 
-#first-content .glow-line-2 {
+#first-element .glow-line-2 {
     background: linear-gradient(#7C72FF, #2DA44E 80%, #3FB950);
     width: 3px;
     height: 40vh;
 }
 
-#first-content .text-build-title h2 {
+#first-element .text-build-title h2 {
     font-size: 5.8rem;
     font-family: 'Mona';
     font-weight: semi-bold;
+    color: white;
 }
 
-#first-content .first-element p{
+#first-element p{
     font-size: 1.4rem;
     color: gray;
 }
@@ -141,44 +142,52 @@
     height: 2.8rem;
 }
 
-#first-content .second-element {
+#productivity-content {
     display: flex;
     width: 100%;
-    padding: 0 0 0 5rem;
     position: relative;
     z-index: 2; /* Assure que le contenu texte est au-dessus de l'image */
     overflow: visible;
+    margin: auto;
+    padding: 0px 16px 0px 16px;
 }
 
-.second-element .line-left .glow-line-3 {
+#productivity-content .line-left .glow-line-3 {
     width: 3px;
     height: 40vh;
     background: linear-gradient(#2DA44E 50%, transparent)
 }
 
-.second-element .text-build {
+#productivity-content .line-left .glow-icon {
+    padding: 0 0 .5rem 0;
+}
+
+#productivity-content .text-build {
     gap: 1rem;
     position: relative;
     z-index: 1;
 }
 
-.second-element .text-build h3 {
-    margin-top: 1.5rem;
+#productivity-content .text-build h3 {
+    margin-top: 1rem;
     font-size: 1.5rem;
     font-weight: normal;
+    color: white;
 }
 
-.second-element .text-build h2 {
+#productivity-content .text-build h2 {
     font-size: 3rem;
+    margin-top: 1.8rem;
     font-weight: normal;
     color: #2DA44E;
 }
 
-.second-element .text-build p{
+#productivity-content .text-build p{
     font-size: 2.8rem;
+    color: white;
 }
 
-.second-element .big-circle {
+#productivity-content .big-circle {
     position: absolute;
     height: 40rem;
     width: 40rem;
@@ -195,7 +204,7 @@
     z-index: -1;
 }
 
-.second-element .big-circle .middle-circle {
+#productivity-content .big-circle .middle-circle {
     position: relative;
     height: 50%;
     width: 50%;
@@ -206,7 +215,7 @@
     align-items: center;
 }
 
-.second-element .big-circle .middle-circle .coin-circle {
+#productivity-content .big-circle .middle-circle .coin-circle {
     position: absolute;
     width: 1rem;
     height: 1rem;
@@ -216,7 +225,7 @@
     left: 8%;
 }
 
-.second-element .big-circle .middle-circle .small-circle {
+#productivity-content .big-circle .middle-circle .small-circle {
     width: 60%;
     position: relative;
     height: 60%;
@@ -244,35 +253,35 @@
     border-radius: 10px;
 }
 
-.third-element {
+#third-element {
     position: relative;
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.third-element .left-element {
+#third-element .left-element {
     width: 50%;
     margin-top: 5rem;
     padding-left: 2.8rem;
     padding-right: 5rem;
 }
 
-.third-element .left-element p {
+#third-element .left-element p {
     font-size: 1.5rem;
     color: gray;
 }
 
-.third-element .left-element span{
+#third-element .left-element span{
     color: white;
 }
 
-.third-element .left-element a {
+#third-element .left-element a {
     font-size: 1.5rem;
     margin: 5rem 0 0 0;
 }
 
-.third-element .right-element img{
+#third-element .right-element img{
     position: absolute;
     width: 35%;
     height: 100%;
